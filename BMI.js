@@ -9,13 +9,13 @@ function calculateBMI(){
     if (bmi < 18.5) {
         category = "Underweight";
     }
-    else if (bmi >= 25 && bmi <= 24.9) {
+    else if (bmi >= 18.5 && bmi <= 24.9) {
         category = "Healthy/Normal Weight";
     }
     else if (bmi >= 25 && bmi <= 29.9) {
         category = "Overweight";
     }
-    else {
+    else if(bmi > 30) {
         category = "Obese";
     }
 
