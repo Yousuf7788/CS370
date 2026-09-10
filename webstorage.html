@@ -1,0 +1,73 @@
+
+<html lang="en">
+<head>
+    <title>HTML API Example</title>
+</head>
+
+<body>
+
+    <h1>Web Storage API</h1>
+    <p>Save your name and age in the browser by using local storage</p>
+
+    <label for="name"></label>
+    <input id="name" type="text" placeholder="Enter your name">
+
+    <label for="age"></label>
+    <input id="age" type="text" placeholder="Enter your age">
+
+    <button id="saveButton" type="button">Save Name</button>
+    <button id="clearButton" type="button">Clear Name</button>
+
+    <p id="message"></p>
+
+    <script>
+        const nameInput = document.getElementById("name");
+        const ageInput = document.getElementById("age");
+        const message = document.getElementById("message");
+
+        function showSavedData() {
+            const savedName = localStorage.getItem("studentName");
+            const savedAge = localStorage.getItem("studentAge");
+
+            if (savedName && savedAge) {
+                nameInput.value = savedName;
+                ageInput.value = savedAge;
+                message.textContent = `Welcome Back, ${savedName} and Age: ${savedAge}`;
+            } else {
+                message.textContent = "No name and age has been saved yet";
+            }
+        }
+
+        document.getElementById("saveButton").addEventListener("click", () => {
+            const name = nameInput.value.trim();
+            const age = ageInput.value.trim();
+
+            if (name && age) {
+                localStorage.setItem("studentName", name);
+                localStorage.setItem("studentAge", age);
+
+                showSavedData();
+            } else {
+                message.textContent = "Please enter a name and age first";
+            }
+        });
+
+        document.getElementById("clearButton").addEventListener("click", () => {
+            localStorage.removeItem("studentName");
+            localStorage.removeItem("studentAge");
+
+            nameInput.value = "";
+            ageInput.value = "";
+
+            showSavedData();
+        });
+
+        showSavedData();
+
+        let a = true;
+        let b = false;
+        
+    </script>
+
+</body>
+</html>

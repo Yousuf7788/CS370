@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Yousuf Aijaz - Computer Engineering Student at Habib University">
+    <title>Yousuf Aijaz | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ===== BASE STYLES ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.7;
+        }
+
+        /* ===== HEADER / HERO ===== */
+        .hero {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #1a1a3e 100%);
+            text-align: center;
+            padding: 60px 20px 50px 20px;
+            border-bottom: 2px solid #334155;
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6, #a78bfa);
+            margin: 0 auto 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 2px;
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.4);
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        .hero a {
+            color: #818cf8;
+            text-decoration: none;
+        }
+
+        .hero a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-row {
+            margin-top: 18px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-row span {
+            background-color: #1e293b;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #cbd5e1;
+            border: 1px solid #334155;
+        }
+
+        /* ===== MAIN CONTAINER ===== */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* ===== SECTION STYLES ===== */
+        .section {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #a78bfa;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #334155;
+        }
+
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-bottom: 4px;
+        }
+
+        h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #94a3b8;
+            margin-bottom: 2px;
+        }
+
+        .date {
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 8px;
+        }
+
+        /* ===== LISTS ===== */
+        ul {
+            list-style: disc;
+            padding-left: 22px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #cbd5e1;
+        }
+
+        /* ===== PROJECT CARD ===== */
+        .project-card {
+            background-color: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 16px;
+        }
+
+        .project-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-card h3 {
+            color: #c4b5fd;
+        }
+
+        .project-card p {
+            font-size: 14px;
+            color: #94a3b8;
+            margin-top: 6px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #312e81;
+            color: #a5b4fc;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-right: 6px;
+            margin-top: 8px;
+        }
+
+        /* ===== SKILLS ===== */
+        .skill-group {
+            margin-bottom: 12px;
+        }
+
+        .skill-group strong {
+            color: #c4b5fd;
+        }
+
+        /* ===== GITHUB LINK ===== */
+        .github-link {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 10px 24px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .github-link:hover {
+            opacity: 0.85;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #475569;
+            font-size: 13px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HERO SECTION ===== -->
+    <div class="hero">
+        <div class="avatar">YA</div>
+        <h1>Yousuf Aijaz</h1>
+        <p>Computer Engineering Student | Habib University</p>
+        <br>
+        <div class="contact-row">
+            <span>📧 Yousufaijaz042@gmail.com</span>
+            <span>📞 0333-7164694</span>
+            <span>📍 Clifton, Karachi, Pakistan</span>
+        </div>
+        <br>
+        <a href="https://github.com/" class="github-link">🔗 View My GitHub</a>
+    </div>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="container">
+
+        <!-- ===== ABOUT ME ===== -->
+        <div class="section">
+            <h2>About Me</h2>
+            <p style="font-size: 14px; color: #cbd5e1;">
+                A dedicated and driven Computer Engineering student at Habib University, currently in my
+                sophomore year with an expected graduation in 2027. Awarded a 100% scholarship (HU TOPS), I
+                am committed to academic excellence and passionate about software and hardware development.
+            </p>
+            <br>
+            <p style="font-size: 14px; color: #cbd5e1;">
+                I am proficient in Python, Object-Oriented Programming, and data structures, and have gained
+                practical experience in Raspberry Pi-based embedded systems, digital design with Verilog, and
+                FPGA programming. With a strong background in PC hardware, my enthusiasm for building and
+                understanding PCs motivates my pursuit of Computer Engineering as my major.
+            </p>
+            <br>
+            <p style="font-size: 14px; color: #cbd5e1;">
+                I am eager to continue expanding my knowledge in both software and hardware, designing efficient
+                algorithms, RISC processor architectures, and creating innovative solutions for real-world
+                applications. I am looking forward to exploring new opportunities, collaborating with industry
+                professionals, and fostering my continuous growth.
+            </p>
+        </div>
+
+        <!-- ===== EDUCATION ===== -->
+        <div class="section">
+            <h2>Education</h2>
+
+            <h3>Habib University</h3>
+            <h4>Computer Engineering | BSCE</h4>
+            <p class="date">August 2023 - Present &nbsp;|&nbsp; Karachi, Pakistan</p>
+            <ul>
+                <li>Awarded a 100 percent scholarship for a four-year degree, a testament to academic excellence and outstanding achievement.</li>
+            </ul>
+
+            <br>
+
+            <h3>Aga Khan Higher Secondary School</h3>
+            <h4>Pre-engineering | Intermediate</h4>
+            <p class="date">August 2021 – May 2023 &nbsp;|&nbsp; Karachi, Pakistan</p>
+
+            <br>
+
+            <h3>Habib Public School</h3>
+            <h4>Matriculation | Computer Science</h4>
+            <p class="date">August 2019 – May 2021 &nbsp;|&nbsp; Karachi, Pakistan</p>
+        </div>
+
+        <!-- ===== PROJECTS ===== -->
+        <div class="section">
+            <h2>Projects</h2>
+
+            <div class="project-card">
+                <h3>Tetris Game</h3>
+                <span class="tag">C++</span>
+                <span class="tag">OOP</span>
+                <span class="tag">SFML</span>
+                <p>
+                    Designed and implemented a Tetris game using the SFML library, focusing on classic
+                    gameplay mechanics. Developed a modular OOP architecture with classes for Tetriminos,
+                    Board, and Game Logic, ensuring scalability and maintainability. Integrated unique Tetrimino
+                    shapes with interactive gameplay features, including rotation, movement, and line clearing.
+                    The game dynamically adjusts difficulty, providing an engaging experience as the player
+                    progresses.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Pipelined RISC-V Processor</h3>
+                <span class="tag">Verilog</span>
+                <span class="tag">Computer Architecture</span>
+                <span class="tag">Vivado</span>
+                <p>
+                    Developed a 5-stage pipelined RISC-V processor capable of executing the bubble sort
+                    algorithm, with a focus on hazard detection and resolution through techniques like stalling,
+                    flushing, and data forwarding. Analyzed and compared its performance against a single-cycle
+                    processor, emphasizing latency trade-offs and identifying potential areas for optimization.
+                    Utilized Vivado for simulation and debugging.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Plant Monitoring System</h3>
+                <span class="tag">Verilog</span>
+                <span class="tag">FPGA</span>
+                <span class="tag">Digital Logic</span>
+                <p>
+                    Developed a plant monitoring system that integrated temperature, UV, and moisture
+                    sensors with an FPGA using Verilog. This integration enabled real-time environmental data
+                    processing, enhancing the system's ability to monitor and support plant health.
+                </p>
+            </div>
+        </div>
+
+        <!-- ===== ACHIEVEMENTS ===== -->
+        <div class="section">
+            <h2>Achievements</h2>
+            <ul>
+                <li>HU TOPS Scholar - Habib University</li>
+                <li>High Achiever Award (Habib Public School) (SSC-II)</li>
+                <li>Member of Habib Public School Senior Student Council</li>
+                <li>Honourable Mention (American Math Olympiad)</li>
+                <li>Certificate of Appreciation (International Letter Writing Competition)</li>
+            </ul>
+        </div>
+
+        <!-- ===== SKILLS ===== -->
+        <div class="section">
+            <h2>Additional Skills</h2>
+
+            <div class="skill-group">
+                <strong>Programming:</strong> Python, C++
+            </div>
+            <div class="skill-group">
+                <strong>Problem Solving:</strong> Data Structures, Algorithms, OOP
+            </div>
+            <div class="skill-group">
+                <strong>Languages:</strong> English (Experienced), Urdu (Proficient), Sindhi (Proficient)
+            </div>
+            <div class="skill-group">
+                <strong>Hardware:</strong> Experienced in PC building and understanding how PC parts work
+            </div>
+            <div class="skill-group">
+                <strong>Leadership:</strong> Student Council, Team Projects
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        &copy; 2026 Yousuf Aijaz. All rights reserved.
+    </footer>
+
+</body>
+</html>
